@@ -4,7 +4,7 @@ Angular Server Side Rendered application to filter SpaceX launch programs. This 
 
 ## DEMO Link
 
-[SpaceX Launch Programs](https://jovial-kalam-04e79e.netlify.app/#/programs)
+[SpaceX Launch Programs](https://determined-newton-9ae8c2.netlify.app/)
 
 ## Development server
 
