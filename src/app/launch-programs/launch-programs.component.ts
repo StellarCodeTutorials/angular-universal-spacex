@@ -24,7 +24,7 @@ export class LaunchProgramsComponent implements OnInit {
     this.isLoading = true;
     this.appService.getAllLaunches()
     .subscribe((response: any) => {
-      console.log(response);
+      // console.log(response);
       this.launchDataArray = response;
       this.isLoading = false;
     }, err => {
@@ -34,7 +34,7 @@ export class LaunchProgramsComponent implements OnInit {
   }
 
   filterLaunchPrograms(index: number, year: string): any {
-    console.log(index, year);
+    // console.log(index, year);
     this.getFilteredLaunches(year);
     this.launchYearSelectedIndex = index;
     this.showFilter = true;
@@ -43,7 +43,7 @@ export class LaunchProgramsComponent implements OnInit {
   getFilteredLaunches(year: string): any {
     this.appService.getLaunchesByYear(year)
     .subscribe((response: any) => {
-      console.log(response);
+      // console.log(response);
       this.launchDataArray = response;
     }, err => {
       console.log(err);
